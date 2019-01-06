@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!--- CSS --->
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/media-screen.css">
+
+    <!--BOOTSTRAP  CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!--jquery-->
+
+
+</head>
+
+<body class="index">
+
+
+<header class="mobile_nav">
+
+
+    <ul class="top_menu" id="top_menu">
+        <li class="logo_head">
+            <img src="./images/logo.png" alt="">
+        </li>
+        <li id="gumburger_menu" class="gumburger">&#9776;</li>
+    </ul>
+    <ul class="sub-menu" style="display: none;" id="sub_menu">
+        <li><a href="dashbroad.html" style="background-image: url('images/dashboard.png') ">Dashboard</a></li>
+        <li><a href="user-page.html" style="background-image: url('images/group.png')">Users</a></li>
+        <li><a href="profile.html" style="background-image: url('images/customers.png')">Profils</a></li>
+        <li><a  class="active" href="products.html" style="background-image: url('images/cosmos.png') ">Products</a></li>
+        <li><a class="active" href="keys.html" style="background-image: url('images/key.png') ">Key</a></li>
+        <div class="end-menu">
+            <li><a href="#" style="background-image: url('images/setting.png') ">API Dots</a></li>
+
+            <li><a href="#" style="background-image: url('images/setting.png') ">Settings</a></li>
+        </div>
+    </ul>
+
+
+</header>
+
+<header class="respons">
+<div class="logo">
+<img src="./images/logo.png" alt="">
+</div>
+
+
+<div class="menu">
+
+<!-- Меню -->
+    <ul class="nav_main nav_style">
+        <li>
+            <a href="dashbroad.html" style="background-image: url('images/dashboard.png') "> Dashboard</a>
+        </li>
+        <li>
+            <a href="user-page.html" style="background-image: url('images/group.png') ">Users</a>
+        </li>
+        <li>
+            <a href="profile.html" style="background-image: url('images/customers.png') ">Profiles</a>
+        </li>
+        <li>
+            <a class="active" href="products.html" style="background-image: url('images/cosmos.png') ">Products</a>
+        </li>
+        <li>
+            <a href="keys.html" style="background-image: url('images/key.png') ">Keys</a>
+        </li>
+    </ul>
+
+    <ul class="nav_second nav_style">
+        <li>
+            <a href="#" style="background-image: url('images/setting.png') ">API Docs</a>
+        </li>
+        <li>
+            <a href="#" style="background-image: url('images/setting.png') ">Settings</a>
+        </li>
+
+    </ul>
+</div>
+
+
+</header>
+<div class="icon-menu">
+<img src="./images/menu-ham-icon.png">
+Menu
+</div>
+<main>
+    <div class="main_header shadow-sm">
+        <div class="search">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6  col-md-6  col-sm-12 search_line">
+                        <input type="text" placeholder="Search">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12  user_block">
+                        <div class="icons">
+                            <span><img class="m-support" src="images/Support%20Iocn.svg" alt=""></span>
+                            <span><img class="m-chat" src="images/Chat%20Icon.svg" alt=""></span>
+                            <span><img class="m-notif mar-align" src="images/Notification.svg" alt=""></span>
+                        </div>
+                        
+                        <div class="m-dropdown">
+                        <button onclick="myFunction11()" class="m-dropbtn">Jonh Doe
+                            <img src="images/small-down.svg"></button>
+                          <div id="m-myDropdown" class="m-dropdown-content">
+                            <a href="#home">Account setting</a>
+                            <a href="#about">Logout</a>
+                          </div>
+                        </div>
+                        
+                        <div class="avatar">
+                            <img src="images/avatar.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div>
+            <h2 class="h2-user">Products</h2>
+        </div>
+        <div class="row">
+            <div class="table-pad col-lg-12 col-md-12 col-sm-12">
+                <div class="table_window ">
+                    <div class="table__scroll">
+                        <table class="table">
+                            <thead class="shadow-sm">
+                            <tr>
+                                <th scope="col">Product name</th>
+                                <th scope="col"></th>
+                                <th scope="col">Download link</th>
+                                <th scope="col">Product Price</th>
+                            </tr>
+                            <tr >
+                                    <div class="all-btn">
+                                        <button class="btn-pr">Create</button>
+                                        <button class="btn-pr">Save</button>
+                                        <button class="btn-pr">Cancel</button>
+                                    </div>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td  class="firs-try" scope="row"><p class="name-p">Amazing software shop </p></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">...</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="products-edit.html">Edit</a>
+                                            <a href="#">Delete</a>
+                                            <a href="#">Block</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+                            </tr>
+                            <tr>
+                                <td class="firs-try" scope="row"><p class="name-p">Another one</p></td>
+                                <td>    <div class="dropdown">
+                                    <button onclick="myFunction2()" class="dropbtn">...</button>
+                                    <div id="myDropdown-2" class="dropdown-content">
+                                        <a href="products-edit.html">Edit</a>
+                                        <a href="#">Delete</a>
+                                        <a href="#">Block</a>
+                                    </div>
+                                </div></td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+
+                            </tr>
+                            <tr>
+                                <td  class="firs-try" scope="row"><p class="name-p">And Another one</p></td>
+                                <td>    <div class="dropdown">
+                                    <button onclick="myFunction3()" class="dropbtn">...</button>
+                                    <div id="myDropdown-3" class="dropdown-content">
+                                        <a href="products-edit.html">Edit</a>
+                                        <a href="#">Delete</a>
+                                        <a href="#">Block</a>
+                                    </div>
+                                </div></td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+
+                            </tr>
+                            <tr>
+                                <td class="firs-try" scope="row"><p class="name-p">it get’s disturbing but sorry another one too</p></td>
+                                <td>    <div class="dropdown">
+                                    <button onclick="myFunction4()" class="dropbtn">...</button>
+                                    <div id="myDropdown-4" class="dropdown-content">
+                                        <a href="products-edit.html">Edit</a>
+                                        <a href="#">Delete</a>
+                                        <a href="#">Block</a>
+                                    </div>
+                                </div></td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+
+                            </tr>
+                            <tr >
+                                <td class="firs-try" scope="row"><p class="name-p">You know what to do now … ^^</p></td>
+                                <td>    <div class="dropdown">
+                                    <button onclick="myFunction5()" class="dropbtn">...</button>
+                                    <div id="myDropdown-5" class="dropdown-content">
+                                        <a href="products-edit.html">Edit</a>
+                                        <a href="#">Delete</a>
+                                        <a href="#">Block</a>
+                                    </div>
+                                </div></td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+
+                            </tr>
+                            <tr>
+                                <td  class="firs-try" scope="row"><p class="name-p">Best</p></td>
+                                <td>    <div class="dropdown">
+                                    <button onclick="myFunction6()" class="dropbtn">...</button>
+                                    <div id="myDropdown-6" class="dropdown-content">
+                                        <a href="products-edit.html">Edit</a>
+                                        <a href="#">Delete</a>
+                                        <a href="#">Block</a>
+                                    </div>
+                                </div></td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+                            </tr>
+                            <tr>
+                                <td  class="firs-try" scope="row"><p class="name-p">Regards</p></td>
+                                <td>    <div class="dropdown">
+                                    <button onclick="myFunction7()" class="dropbtn">...</button>
+                                    <div id="myDropdown-7" class="dropdown-content">
+                                        <a href="products-edit.html">Edit</a>
+                                        <a href="#">Delete</a>
+                                        <a href="#">Block</a>
+                                    </div>
+                                </div></td>
+                                <td>www.1.com</td>
+                                <td>www.1.com</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <span class="show_more">Show More</span>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <a  href="#" class="pluss"> <img src="./images/pluss.svg" alt=""></a>
+    </div>
+
+
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+<!--- BOOTSTRAP CDN --->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="scripts/global.js"></script>
+<script src="menu.js"></script>
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction11() {
+        document.getElementById("m-myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.m-dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("m-dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function myFunction2 () {
+        document.getElementById("myDropdown-2").classList.toggle("show");
+    }
+    function myFunction3 () {
+        document.getElementById("myDropdown-3").classList.toggle("show");
+    }
+    function myFunction4 () {
+        document.getElementById("myDropdown-4").classList.toggle("show");
+    }
+    function myFunction5 () {
+        document.getElementById("myDropdown-5").classList.toggle("show");
+    }
+    function myFunction6 () {
+        document.getElementById("myDropdown-6").classList.toggle("show");
+    }
+    function myFunction7 () {
+        document.getElementById("myDropdown-7").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import "vars.scss";
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+h1{}
+
+h2{
+  font-size: 26px;
+  font-family: $secondary_fonts;
+  color:$red;
+}
+
+h3{}
+
+h4{}
+
+h5{}
+
+h6{}
+
+
+p{
+  font-size: 18px;
+  color:$red ;
+  font-family:$main_fonts;
+  font-weight: 400;
+}
+
+a{
+  font-size: 25px;
+  color: white;
+  &:hover{
+  text-decoration: none;
+  color: white;
+}
+}

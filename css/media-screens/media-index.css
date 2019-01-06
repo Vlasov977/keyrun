@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+  .table__scroll {
+    overflow-y: scroll; }
+  table {
+    min-width: 800px; } }
+
+@media screen and (max-width: 1024px) {
+  .icons {
+    float: left; } }
+
+@media screen and (max-width: 981px) {
+  .cards {
+    margin-bottom: 30px; } }

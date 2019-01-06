@@ -1,0 +1,76 @@
+
+
+.nav_main .active:before{
+  content: ' ';
+  width: 9px!important;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  position: absolute!important;
+  background: #EE4326!important;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1440px) {
+  .home_header ul li a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1280px) {
+  .home_header ul li {
+    padding: 15px; }
+    .home_header ul li a {
+      font-size: 20px; } }
+
+@media screen and (max-width: 1024px) {
+  .home_header ul li {
+    padding: 10px; }
+    .home_header ul li a {
+      font-size: 20px; } }
+
+@media screen and (max-width: 995px) {
+  .home_header ul li {
+    padding: 10px; }
+    .home_header ul li a {
+      font-size: 17px; }
+  .user_login {
+    display: none; } }
+
+@media screen and (max-width: 839px) {
+  .mobile_nav, .top_menu {
+    display: block !important; }
+  .sub-menu {
+    display: none; }
+  .home_header {
+    display: none; }
+    .menu_nav .top_menu .logo_heder img {
+    width: 255px;
+    padding: 20px 5px;}
+    form {max-width: 515px;
+    min-height: 545px;
+    text-align: center;
+    margin: auto 10px !important;
+    border-radius: 50px;
+    background: white;
+    padding-top: 35px;}
+    main {padding-top: 50px;}
+    form label {margin-bottom: 20px;}
+    form input {max-width: 85%;width: 100%;}
+    .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {margin-left: 20px;margin-top: 9px;}
+    .checkbox label, .radio label {padding-left: 0;}
+    form .checkbox .remember{display: block; padding: 0; float: none;}
+    form .checkbox .pasword {display: block; padding: 0; float: none;}
+    form button{margin: 10px 20px 30px;}
+    main{min-height: 100vh;}
+    .pluss {position: fixed;bottom: 0px;right: 0px;}
+    .pluss img {width: 60px;}
+    body.index .search_line {padding: 30px 50px 0;}
+    body.index .search_line input {line-height: 40px;}
+    .all-btn {padding: 15px;display: inline-flex;justify-content: center;}
+    body.index .table_window tr td:nth-of-type(2) {width: 15%;}
+    body.index .table_window tr td:nth-of-type(1) {width: 40%;}
+}
+
+

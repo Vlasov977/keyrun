@@ -1,0 +1,24 @@
+@import './baseRules/_reset.scss';
+@import './baseRules/_baseRules.scss';
+@import './vars.scss';
+@import './loggin.scss';
+
+body.index {
+  background: #f6f6f6;
+  min-height: 100vh;
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  background: url("../images/background_panel.png");
+  background-position: center center;
+  background-size: auto;
+  @import './index.scss';
+
+  @import './media-screens/media-index.scss';
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+}
+

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashbroad</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!--- CSS --->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--BOOTSTRAP  CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/media-screen.css">
+
+
+    <!--jquery-->
+
+
+</head>
+
+<body class="index" id="dashbroad">
+
+
+<header class="mobile_nav">
+
+
+    <ul class="top_menu" id="top_menu">
+        <li class="logo_head">
+            <img src="./images/logo.png" alt="">
+        </li>
+        <li id="gumburger_menu" class="gumburger">&#9776;</li>
+    </ul>
+    <ul class="sub-menu" style="display: none;" id="sub_menu">
+        <li class=""><a href="dashbroad.html" style="background-image: url('images/dashboard.png') ">Dashboard</a></li>
+        <li><a href="user-page.html" style="background-image: url('images/group.png')">Users</a></li>
+        <li><a href="profile.html" style="background-image: url('images/customers.png')">Profils</a></li>
+        <li><a href="products.html" style="background-image: url('images/cosmos.png') ">Products</a></li>
+        <li><a href="keys.html" style="background-image: url('images/key.png') ">Key</a></li>
+        <div class="end-menu">
+            <li><a href="#" style="background-image: url('images/setting.png') ">API Dots</a></li>
+
+            <li><a href="#" style="background-image: url('images/setting.png') ">Settings</a></li>
+        </div>
+    </ul>
+
+
+</header>
+
+<header class="respons">
+<div class="logo">
+<img src="./images/logo.png" alt="">
+</div>
+
+
+<div class="menu">
+
+<!--&lt;!&ndash; Иконка меню &ndash;&gt;-->
+<!--<div class="icon-close">-->
+<!--<img src="./images/close-btn.png">-->
+<!--</div>-->
+
+<!-- Меню -->
+<ul class="nav_main nav_style">
+<li >
+<a class="active"  href="dashbroad.html" style="background-image: url('images/dashboard.png') "> Dashboard</a>
+</li>
+<li>
+<a href="user-page.html" style="background-image: url('images/group.png') ">Users</a>
+</li>
+<li>
+<a href="profile.html" style="background-image: url('images/customers.png') ">Profiles</a>
+</li>
+<li>
+<a href="products.html" style="background-image: url('images/cosmos.png') ">Products</a>
+</li>
+<li>
+<a href="keys.html" style="background-image: url('images/key.png') ">Keys</a>
+</li>
+</ul>
+
+<ul class="nav_second nav_style">
+<li>
+<a href="#" style="background-image: url('images/setting.png') ">API Docs</a>
+</li>
+<li>
+<a href="#" style="background-image: url('images/setting.png') ">Settings</a>
+</li>
+
+</ul>
+</div>
+
+
+</header>
+<div class="icon-menu">
+<img src="./images/menu-ham-icon.png">
+Menu
+</div>
+<main>
+    <div class="main_header shadow-sm">
+        <div class="search">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6  col-md-6  col-sm-12 search_line">
+                        <input type="text" placeholder="Search">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12  user_block">
+                        <div class="icons">
+                            <span><img src="images/support%20.png" alt=""></span>
+                            <span><img src="images/chat.png" alt=""></span>
+                            <span><img class="mar-align" src="images/Notification.png" alt=""></span>
+                        </div>
+                        <div class="m-dropdown">
+                            <button onclick="myFunction11()" class="m-dropbtn">Jonh Doe
+                                <img src="images/small-down.svg"></button>
+                            <div id="m-myDropdown" class="m-dropdown-content">
+                                <a href="#home">Account setting</a>
+                                <a href="#about">Logout</a>
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <img src="images/avatar.png" alt="">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="graphic_cards col-lg-12 ">
+                <h2 class="title">Keys</h2>
+                
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="cards col-lg-6 col-md-6 col-sm-12 col-xs-12 nomarg">
+
+                            <div id="container2" style="height: 300px; min-width: 310px"></div>
+
+                        </div>
+
+                        <div class="cards col-lg-6 col-md-6 col-sm-12 col-xs-12 nomarg">
+
+                            <div id="container3" style="height: 300px; min-width: 310px"></div>
+
+                        </div>
+                    
+                        <div class="cards col-lg-12 col-md-12 col-sm-12 col-xs-12 nomarg">
+
+                            <div id="container" style="height: 400px; min-width: 310px"></div>
+
+                        </div>
+                    </div>                           
+                
+                
+                <div class="maps col-lg-4 col-md-4 col-sm-12 col-xs-12 nomarg">
+                    <div class="map-start">
+                        <h2 class="map-h2">Details on map</h2>
+                        <a  class="show-all" href="#">Show all list</a>
+                        <div>
+                             <img class="icon-map-1" src="./images/icon-map-1.png" alt="">
+                        </div>
+                        <img  class="icon-map-2" src="./images/icon-map-2.png" alt="">
+                        <img class="icon-map-3" src="./images/icon-map-3.png" alt="">
+                        <img class="icon-map-4" src="./images/icon-map-4.png" alt="">
+                        <img class="icon-map-5" src="./images/icon-map-5.png" alt="">
+                        <img class="icon-map-6" src="./images/icon-map-6.png" alt="">
+                    </div>
+                    <div id="regions_div" style="width: 300px; height: 300px;"></div>
+                    <div class="item-cs">
+                        <div class="block-1">
+                            <img  src="./images/sign-1.png" alt="">
+                            <p class="can">Canada</p>
+                            <p class="can1"> $29,193</p>
+                        </div>
+
+                        <div class="block-1">
+                            <img src="./images/sign-2.png" alt="">
+                            <p class="can">Brazil</p>
+                            <p class="can1"> $29,193</p>
+                        </div>
+
+                        <div class="block-1">
+                            <img src="./images/sign-3.png" alt="">
+                            <p class="can">Egypt</p>
+                            <p class="can1"> $29,193</p>
+                        </div>
+
+                        <div class="block-1">
+                            <img src="./images/sign-4.png" alt="">
+                            <p class="can">Russia</p>
+                            <p class="can1"> $29,193</p>
+                        </div>
+
+                        <div class="block-1">
+                            <img src="./images/sign-5.png" alt="">
+                            <p class="can">China</p>
+                            <p class="can1"> $29,193</p>
+                        </div>
+
+                        <div class="block-1">
+                            <img src="./images/sign-6.png" alt="">
+                            <p class="can">Australia</p>
+                            <p class="can1"> $29,193</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<!--- SCRIPTS --->
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+<!--- BOOTSTRAP CDN --->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+<script src="scripts/global.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="menu.js"></script>
+<script src="js/canvasjs.min.js"></script>
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction11() {
+        document.getElementById("m-myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.m-dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("m-dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
+
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+
+    function myFunction3() {
+        document.getElementById("myDropdown3").classList.toggle("show");
+    }
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+    google.charts.load('current', {
+        'packages': ['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+            ['Country', 'Popularity'],
+            ['South America', 33444],
+            ['Canada', 29193],
+            ['Egypt',  18832],
+            ['Russia',  18832],
+            ['Australia',  18832],
+                ['Egypt',  18832],
+                ['Brazil', 18832]
+        ]);
+
+        var options = {
+
+            colorAxis: {colors: ['#F0F0F7', '#F0F0F7', '#F0F0F7']},
+            backgroundColor: '#FFFFFF',
+            datalessRegionColor: '#F0F0F7',
+            defaultColor: '#F72314',
+            stroke:'#FFFFFF',
+            strokeColor:'#FFFFFF',
+            strokeWidth: 0,
+
+
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+    }
+    </script>
+
+
+<script>
+    $(".active").change(function()
+    {
+        document.location.href = $(this).val();
+    });
+</script>
+<script>
+
+
+    $.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
+
+        // Create the chart
+        Highcharts.stockChart('container', {
+
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            title: {
+                text: 'OVERVIEW',
+                textAnchor:'start',
+            },
+
+            series: [{
+                name: 'AAPL Stock Price',
+                data: data,
+                type: 'areaspline',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                },
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.getOptions().colors[0]],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                    ]
+                }
+            }]
+        });
+    });
+
+    $.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
+
+        // Create the chart
+        Highcharts.stockChart('container2', {
+
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            title: {
+                text: 'Product Sold',
+                textAnchor:'start',
+            },
+
+            series: [{
+                name: 'AAPL Stock Price',
+                data: data,
+                type: 'areaspline',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                },
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.getOptions().colors[0]],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                    ]
+                }
+            }]
+        });
+    });
+
+
+    $.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
+
+        // Create the chart
+        Highcharts.stockChart('container3', {
+
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            title: {
+                text: 'Total earning',
+                textAnchor:'start',
+            },
+
+            series: [{
+                name: 'AAPL Stock Price',
+                data: data,
+                type: 'areaspline',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                },
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.getOptions().colors[0]],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                    ]
+                }
+            }]
+        });
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+@import "inc/basic_rools";
+@import "./inc/_vars";
+
+
+
+//*Header*//
+.home_header{
+  display: block;
+  background: $dark_gray;
+  min-height: 145px;
+  width: 100%;
+  .container-fluid  {
+    line-height: 130px!important;
+    max-width: 1790px;
+    width: 100%;
+
+  }
+
+  .center {
+
+    .button {
+      img {
+        vertical-align: middle !important;
+      }
+    }
+  }
+
+}
+
+.home_menu {
+  text-align: right;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block !important;
+      padding: 0 35px;
+      a {
+        color: white;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 400;
+
+      }
+
+      a::before {
+        top: 80%;
+        display: block;
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: $red;
+        transition: width .5s ease-in-out, left .5s ease-in-out;
+        left: 50%;
+        bottom: 0;
+      }
+
+      a::after {
+        top: 80%;
+        display: block;
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: $red;
+        transition: width .5s ease-in-out;
+        left: 50%;
+        bottom: 0;
+      }
+
+      a:hover::before {
+        width: 50%;
+        left: 0;
+      }
+      a:hover::after {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.button {
+  color: white;
+  float: right;
+}
+
+.login {
+  display: inline-block;
+  color: white;
+  padding: 0 10px;
+
+}
+
+.user_login{
+  text-align: center;
+}
+
+
+
+
+///__________mobile nav
+
+.menu_nav {
+  margin: 0;
+  z-index: 55;
+  background: $dark_gray;
+
+
+  .top_menu {
+    background: $dark_gray;
+    margin: 0;
+
+    .gumburger {
+      float: right;
+      display: block;
+      font-size: 30px;
+      padding: 15px 20px;
+
+      color: white;
+      text-decoration: none;
+
+    }
+    .logo_heder{
+      display: inline-block!important;
+
+      img{
+        width: 190px;
+        padding: 20px 30px;
+
+      }
+    }
+  }
+
+
+
+  .sub-menu {
+    margin: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    background: $dark_gray;
+    li {
+      padding: 10px;
+      &:hover{
+        background: #3C3C3C;
+      }
+
+      }
+      a {
+
+        font-size: 16px;
+        padding: 45px;
+        color: white;
+        &:hover, &:active {
+          text-decoration: none;
+          color: $red;
+
+        }
+      }
+    }
+
+
+
+  }
+
+
+
+.mobile_nav,  .top_menu{
+  display: none!important;
+}
+.sub-menu {
+  display: none;
+}
+
+
+
+//*Main*//
+main {
+
+  padding-top: 100px;
+  background: url("../images/bg.jpg");
+background-size: cover;
+  background-attachment: fixed;
+  min-height: 950px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background: rgba(gray, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  * {
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+///////////////////////////////////////
+//////////form
+///////////////////////////////////////
+
+form {
+  max-width: 515px;
+  min-height: 545px;
+  text-align: center;
+  margin: auto !important;
+  border-radius: 10%;
+  background: white;
+  padding-top: 35px;
+  img {
+    margin-top: 20px;
+    padding-bottom: 35px;
+  }
+  input {
+    border: none;
+    background: $light_gray;
+    min-height: 66px;
+    max-width: 75%;
+    width: 100%;
+    &:active, &:focus {
+      outline: none !important;
+    }
+  }
+
+  label {
+
+    margin-bottom: 30px;
+    width: 100%;
+    p {
+      font-weight: bold;
+    }
+
+  }
+  input[type='text'] {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: $main_fonts;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+  }
+  input[type='checkbox'] {
+
+    width: 13px;
+    height: 13px;
+    top: -30px;
+    left: 70px;
+
+  }
+  .checkbox {
+    margin-top: -5px;
+    .remember {
+      display: inline-block;
+      float: left;
+      padding-left: 80px;
+    }
+    .pasword {
+      display: inline;
+      float: right;
+      padding-right: 80px;
+    }
+  }
+
+  button {
+    padding: 25px 100px;
+    border-radius: 20px;
+    background: $red;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: $main_fonts;
+    margin: 30px 20px;
+
+  }
+
+}
+
+//*Footer*//
+
+
+

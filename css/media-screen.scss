@@ -1,0 +1,95 @@
+//@import "./media-screen/home";
+//@import "./media-screen/panel"
+
+@media screen and (max-width:1440px) {
+  .home_header{
+    ul{
+      li{
+        a{
+          font-size: 20px;
+        }
+
+      }
+
+    }
+  }
+}
+
+
+
+
+  @media screen and (max-width:1280px) {
+
+    .home_header {
+      ul {
+        li {
+          padding: 15px;
+          a {
+            font-size: 20px;
+
+          }
+
+        }
+
+      }
+    }
+  }
+
+@media screen and (max-width:1024px){
+  .home_header {
+    ul {
+      li {
+        padding: 10px;
+        a {
+          font-size: 20px;
+
+        }
+
+      }
+
+    }
+  }
+
+}
+
+@media screen and (max-width:995px){
+  .home_header {
+    ul {
+      li {
+        padding: 10px;
+        a {
+          font-size:17px;
+
+        }
+
+      }
+
+    }
+  }
+  .user_login{
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width:839px){
+  .mobile_nav,  .top_menu{
+    display:block!important;
+  }
+  .sub-menu {
+    display: none;
+  }
+  .home_header{
+    display: none;
+  }
+    .pluss {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+    .pluss img {
+    width: 60px;
+}
+}
+
